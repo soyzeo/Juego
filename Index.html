@@ -1,0 +1,297 @@
+<style>
+    img {
+        width: 80px
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+    }
+
+    texto {
+        display: flex;
+        align-items: center;
+        justify-content: center;     
+        padding: 80px;
+        margin: 10px;
+        background: gray;
+    }
+
+    .header {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    padding: 20px;
+    }
+
+    .emoji {
+    font-size: 20px;
+    }   
+</style>
+
+<div class="header">
+    <span class="emoji">🤖</span>
+    <span>RobotWeb</span>
+    <span class="emoji">🔍</span>
+</div>
+
+<section>
+    <img src="https://gerardfp.github.io/htmllayout/img/1.webp">
+    <img src="https://gerardfp.github.io/htmllayout/img/2.webp">
+    <img src="https://gerardfp.github.io/htmllayout/img/3.webp">
+    <img src="https://gerardfp.github.io/htmllayout/img/4.webp">
+
+</section>
+
+<texto>
+<p>Welcome to RobotWeb</p>
+</texto>
+
+<section>
+    <h3>Ejercicio 2:</h3>
+
+    <style>
+        hr {
+            margin: 2em 0;
+        }
+    </style>
+    <style>
+    .a2 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        background-color: lightskyblue;
+        place-items: center;
+    }
+    
+    .a2 div {
+        background-color:lightyellow;
+    }
+    </style>
+    
+    <div class="a2">
+        <div>Estoy siempre centrado</div>
+    </div>
+
+    <section>
+        <h3>Ejercicio 3:</h3>
+    
+        <style>
+        .a3 {
+            resize: both;
+            overflow: auto;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: lightskyblue;
+            justify-content: center;
+        }
+        
+        .a3 div{
+            flex: 0 1 150px;
+            margin: 5px;
+            background-color:lightyellow;
+        }
+        </style>
+        
+        <div class="a3" style="width: 829px; height: 119px;">
+            <div contenteditable="true">Crezco hacia abajo y tengo un ancho máximo de 150px <br> [150 x 115]</div>
+            <div contenteditable="true">Crezco hacia abajo y tengo un ancho máximo de 150px <br> [150 x 115]</div>
+            <div contenteditable="true">Crezco hacia abajo y tengo un ancho máximo de 150px <br> [150 x 115]</div>
+        </div>
+        
+    </section>
+
+<section>
+    <h3>Ejercicio 4:</h3>
+    
+    <style>
+    .a4 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: minmax(150px, 25%) 1fr;
+        background-color: lightskyblue;
+    }
+    
+    .a4_1{
+        background-color:lightyellow;
+    }
+    
+    .a4_2{
+        background-color: lightpink;
+    }
+    </style>
+    
+    <div class="a4">
+        <div class="a4_1" contenteditable="true">Tengo un ancho mínimo de 150px, y un máximo del 25% <br> [208 x 86]</div>
+        <div class="a4_2" contenteditable="true">Ocupo el resto de espacio sobrante <br> [624 x 86]</div>
+    </div>
+    
+</section>
+
+<section>
+    <h3>Ejercicio 5:</h3>
+    
+    <style>
+    .a5 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-rows: auto 1fr auto;
+        background-color: lightskyblue;
+    }
+    
+    .a5_1{
+        background-color:lightyellow;
+    }
+    .a5_2 {
+        background-color: lightsalmon;
+    }
+    .a5_3 {
+        background-color: lightpink;
+    }
+    </style>
+    
+    <div class="a5">
+        <div class="a5_1" contenteditable="true">Ocupo solo la altura que necesito <br> [832 x 58]</div>
+        <div class="a5_2" contenteditable="true">Ocupo el resto de altura sobrante <br> [832 x 58]</div>
+        <div class="a5_3" contenteditable="true">Ocupo solo la altura que necesito <br> [832 x 58]</div>
+    </div>
+    
+</section>
+
+<section>
+    <h3>Ejercicio 6:</h3>
+    
+    <style>
+    .a6 {
+        resize: both;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: auto 1fr auto;
+        grid-template-rows: auto 1fr auto;
+        background-color: lightskyblue;
+    }
+    
+    .a6_1 {
+        background-color:lightpink;
+        grid-column: 1 / 4;
+    }
+    .a6_2 {
+        background-color: lightblue;
+    }
+    .a6_3 {
+        background-color: lightsalmon;
+    }
+    .a6_4 {
+        background-color: lightyellow;
+    }
+    .a6_5 {
+        background-color: lightgreen;
+        grid-column: 1 / 4;
+    }
+    </style>
+    
+    <div class="a6">
+        <div class="a6_1" contenteditable="true">Ocupo solo la altura que necesito <br> [832 x 58]</div>
+        <div class="a6_2" contenteditable="true">Ocupo el ancho que necesito, <br> y crezco de altura <br> [211 x 86]</div>
+        <div class="a6_3" contenteditable="true">Ocupo el ancho restante, <br> y crezco de altura <br> [411 x 86]</div>
+        <div class="a6_4" contenteditable="true">Ocupo el ancho que necesito, <br> y crezco de altura <br> [211 x 86]</div>
+        <div class="a6_5" contenteditable="true">Ocupo solo la altura que necesito <br> [832 x 58]</div>
+    </div>
+    
+</section>
+
+<section>
+    <h3>Ejercicio 7:</h3>
+    <style>
+    
+        .a7 {
+            resize: both;
+            overflow: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        }
+        
+        .a7_1{
+            background-color:lightpink;
+        }
+        .a7_2 {
+            background-color: lightblue;
+        }
+        .a7_3 {
+            background-color: lightsalmon;
+        }
+        .a7_4 {
+            background-color: lightyellow;
+        }
+        </style>
+        
+        <div class="a7">
+            <div class="a7_1" contenteditable="true">Tenemos un ancho <b>mínimo</b> de 100px. Si no cabemos todos en una fila, ocupamos otra <br> [208 x 144]</div>
+            <div class="a7_2" contenteditable="true">Tenemos un ancho <b>mínimo</b> de 100px. Si no cabemos todos en una fila, ocupamos otra <br> [208 x 144]</div>
+            <div class="a7_3" contenteditable="true">Tenemos un ancho <b>mínimo</b> de 100px. Si no cabemos todos en una fila, ocupamos otra <br> [208 x 144]</div>
+            <div class="a7_4" contenteditable="true">Tenemos un ancho <b>mínimo</b> de 100px. Si no cabemos todos en una fila, ocupamos otra <br> [208 x 144]</div>
+        </div>
+    
+    </section>
+
+    <section>
+        <h3>Ejercicio 8:</h3>
+        <style>
+    
+        .a8 {
+            resize: both;
+            overflow: auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            padding: 1em;
+            border: 1px solid blue;
+        }
+        
+        .a8_1{
+            background-color:lightpink;
+        }
+        .a8_2 {
+            background-color: lightblue;
+        }
+        .a8_3 {
+            background-color: lightsalmon;
+        }
+        .a8_4 {
+            background-color: lightyellow;
+        }
+        </style>
+        
+        <div class="a8">
+            <div class="a8_1" contenteditable="true">Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra <br> [114 x 202]</div>
+            <div class="a8_2" contenteditable="true">Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra <br> [114 x 202]</div>
+            <div class="a8_3" contenteditable="true">Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra <br> [114 x 202]</div>
+            <div class="a8_4" contenteditable="true">Tenemos un ancho de 100px. Si no cabemos todos en una fila, ocupamos otra <br> [114 x 202]</div>
+        </div>
+    
+        <div style="height: 500px;">
+    
+        </div>
+    
+        <script>
+            let observer = new MutationObserver(function(mutations) {
+                mutations.forEach(m => {
+                    m.target.childNodes.forEach(ch => {
+                        if(ch.nodeName != "#text"){
+                            ch.innerHTML = ch.innerHTML.replace(/\[.*\]/, "[" + ch.clientWidth + " x " + ch.clientHeight + "]");
+                        }
+                    });
+                });
+            });
+    
+            document.querySelectorAll("div").forEach(d => {
+                observer.observe(d, {attributes: true});
+            });
+            
+            document.querySelectorAll("div[contenteditable=true]").forEach(d => {
+                d.innerHTML = d.innerHTML.replace(/\[.*\]/, "[" + d.clientWidth + " x " + d.clientHeight + "]");
+            })
+        </script>
+
+</section>
